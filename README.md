@@ -44,9 +44,11 @@ git checkout v0.2.2
 make install
 ```
 
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.humansd/cosmovisor/genesis/bin
 ln -s $HOME/.humansd/cosmovisor/genesis $HOME/.humansd/cosmovisor/current -f
+```
 
 # Copy binary to cosmovisor directory
 cp $(which humansd) $HOME/.humansd/cosmovisor/genesis/bin
