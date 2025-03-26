@@ -50,8 +50,10 @@ mkdir -p $HOME/.humansd/cosmovisor/genesis/bin
 ln -s $HOME/.humansd/cosmovisor/genesis $HOME/.humansd/cosmovisor/current -f
 ```
 
-# Copy binary to cosmovisor directory
+**Copy binary to cosmovisor directory**
+```
 cp $(which humansd) $HOME/.humansd/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 humansd config chain-id humans_3000-31
