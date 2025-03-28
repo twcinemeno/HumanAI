@@ -55,10 +55,12 @@ ln -s $HOME/.humansd/cosmovisor/genesis $HOME/.humansd/cosmovisor/current -f
 cp $(which humansd) $HOME/.humansd/cosmovisor/genesis/bin
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 humansd config chain-id humans_3000-31
 humansd config keyring-backend test
 humansd config node tcp://localhost:18457
+```
 
 # Initialize the node
 humansd init "Your Node Name" --chain-id humans_3000-31
