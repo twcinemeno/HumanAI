@@ -67,8 +67,10 @@ curl -L https://snapshots-testnet.nodejumper.io/humans/genesis.json > $HOME/.hum
 curl -L https://snapshots-testnet.nodejumper.io/humans/addrbook.json > $HOME/.humansd/config/addrbook.json
 ```
 
-# Set seeds
+**Set seeds**
+```
 sed -i -e 's|^seeds *=.*|seeds = "6ce9a9acc23594ec75516617647286fe546f83ca@humans-testnet-seed.itrocket.net:17656,b99df5397a6104fac055f21195f1fb25b77f5704@humans-testnet-peer.itrocket.net:17656,e7c7d7868fa4d9de303b1a7a028a314b7bb55ff9@65.109.92.235:33656,5e1f23a66fafd1a73871f055a6dd2165c01fe1c2@65.109.25.62:26656"|' $HOME/.humansd/config/config.toml
+```
 
 # Set minimum gas price
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "10aheart"|' $HOME/.humansd/config/app.toml
