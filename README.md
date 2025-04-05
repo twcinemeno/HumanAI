@@ -86,8 +86,10 @@ sed -i \
   $HOME/.humansd/config/app.toml
 ```
 
-# Enable prometheus
+**Enable prometheus**
+```
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.humansd/config/config.toml
+```
 
 # Change ports
 sed -i -e "s%:1317%:18417%; s%:8080%:18480%; s%:9090%:18490%; s%:9091%:18491%; s%:8545%:18445%; s%:8546%:18446%; s%:6065%:18465%" $HOME/.humansd/config/app.toml
