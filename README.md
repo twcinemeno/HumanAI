@@ -97,8 +97,10 @@ sed -i -e "s%:1317%:18417%; s%:8080%:18480%; s%:9090%:18490%; s%:9091%:18491%; s
 sed -i -e "s%:26658%:18458%; s%:26657%:18457%; s%:6060%:18460%; s%:26656%:18456%; s%:26660%:18461%" $HOME/.humansd/config/config.toml
 ```
 
-# Download latest chain data snapshot
+**Download latest chain data snapshot**
+```
 curl "https://snapshots-testnet.nodejumper.io/humans/humans_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.humansd"
+```
 
 # Install Cosmovisor
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.0
