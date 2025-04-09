@@ -102,8 +102,10 @@ sed -i -e "s%:26658%:18458%; s%:26657%:18457%; s%:6060%:18460%; s%:26656%:18456%
 curl "https://snapshots-testnet.nodejumper.io/humans/humans_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.humansd"
 ```
 
-# Install Cosmovisor
+**Install Cosmovisor**
+```
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.0
+```
 
 # Create a service
 sudo tee /etc/systemd/system/humans.service > /dev/null << EOF
